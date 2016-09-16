@@ -17,16 +17,16 @@
 	</header>
 	
 	<form method="post" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
-		First and Last Name: <input type="text" name="fullname"><br>
+		First and Last Name: <input type="text" name="fullname" autofocus required><br>
 		<br>
 		
-		Email: <input type="email" name="email"><br>
+		Email: <input type="email" name="email" required><br>
 		<br>
 		
-		Desired Username: <input type="text" name="username"><br>
+		Desired Username: <input type="text" name="username" placeholder="username" required><br>
 		<br>
 		
-		Create Password: <input type="password" name="psw"><br>
+		Create Password: <input type="password" name="psw" required><br>
 		<br>
 		
 		Gender: 
@@ -39,6 +39,9 @@
 		<input type="date" name="bday"><br>
 		<br>
 		
+		Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br>
+		<br>
+		
 		Age Group (Note: this information is for private statistical use):
 		<input type="radio" name="agegroup" value="group1">0-12
 		<input type="radio" name="agegroup" value="group2">13-19
@@ -48,7 +51,7 @@
 		<br>
 		<br>
 		
-		Brief Summary of Why You are a Fan of Cheesecake:<br> <textarea rows="4" cols="50" name="summary"></textarea><br>
+		Brief Summary of Why You are a Fan of Cheesecake:<br> <textarea rows="4" cols="50" name="summary" placeholder="Cheesecake is amazing, here is why I am a fan:"></textarea><br>
 		<br>
 		
 		How long have you been a fan of cheesecake?
