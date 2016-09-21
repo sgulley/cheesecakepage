@@ -17,83 +17,98 @@
 	</header>
 	
 	<form method="post" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
-		First and Last Name: <input type="text" name="fullname" autofocus required><br>
-		<br>
+		<fieldset>
+			<legend>Personal Info/Account Setup</legend>
+			First and Last Name: <input type="text" name="fullname" autofocus required><br>
+			<br>
+			
+			Email: <input type="email" name="email" required><br>
+			<br>
+			
+			Desired Username: <input type="text" name="username" placeholder="username" required><br>
+			<br>
+			
+			Create Password: <input type="password" name="psw" required><br>
+			<br>
+			
+			Gender: 
+			<input type="radio" name="gender" value="male"> Male
+			<input type="radio" name="gender" value="female"> Female
+			<br>
+			<br>
+			
+			Birthday:
+			<input type="date" name="bday"><br>
+			<br>
+			
+			Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br>
+			<br>
+			
+			Age Group (Note: this information is for private statistical use):
+			<input type="radio" name="agegroup" value="group1">0-12
+			<input type="radio" name="agegroup" value="group2">13-19
+			<input type="radio" name="agegroup" value="group3">20-35
+			<input type="radio" name="agegroup" value="group4">36-55
+			<input type="radio" name="agegroup" value="group5">56+
+			<br>
+			<br>
+		</fieldset>
 		
-		Email: <input type="email" name="email" required><br>
-		<br>
-		
-		Desired Username: <input type="text" name="username" placeholder="username" required><br>
-		<br>
-		
-		Create Password: <input type="password" name="psw" required><br>
-		<br>
-		
-		Gender: 
-		<input type="radio" name="gender" value="male"> Male
-		<input type="radio" name="gender" value="female"> Female
-		<br>
-		<br>
-		
-		Birthday:
-		<input type="date" name="bday"><br>
-		<br>
-		
-		Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br>
-		<br>
-		
-		Age Group (Note: this information is for private statistical use):
-		<input type="radio" name="agegroup" value="group1">0-12
-		<input type="radio" name="agegroup" value="group2">13-19
-		<input type="radio" name="agegroup" value="group3">20-35
-		<input type="radio" name="agegroup" value="group4">36-55
-		<input type="radio" name="agegroup" value="group5">56+
-		<br>
-		<br>
-		
-		Brief Summary of Why You are a Fan of Cheesecake:<br> <textarea rows="4" cols="50" name="summary" placeholder="Cheesecake is amazing, here is why I am a fan:"></textarea><br>
-		<br>
-		
-		How long have you been a fan of cheesecake?
-		<select name="years">
-			<option value="<1">Less than 1 year</option>
-			<option value="1-3">1-3 years</option>
-			<option value="4-5">4-5 years</option>
-			<option value="6+">6+ years</option>
-		</select><br>
-		<br>
-		
-		Select your Top 3 Favorite Flavors of Cheesecake:<br>
-		<input type="checkbox" name="cheesecake1" value="oreo">Oreo Cheesecake<br>
-		<input type="checkbox" name="cheesecake1" value="chocolate">Chocolate Cheesecake<br>
-		<input type="checkbox" name="cheesecake1" value="triplechocolate">Triple Chocolate Cheesecake<br>
-		<input type="checkbox" name="cheesecake1" value="raspberry">Raspberry Cheesecake<br>
-		<input type="checkbox" name="cheesecake1" value="strawberry">Strawberry Cheesecake<br>
-		<input type="checkbox" name="cheesecake1" value="newyork">New York Style Cheesecake<br>
-		<input type="checkbox" name="cheesecake1" value="mocha">Mocha Cheesecake<br>
-		<input type="checkbox" name="cheesecake1" value="peanutbuttercup">Peanutbutter Cup Cheesecake<br>
-		<input type="checkbox" name="cheesecake1" value="cookiedough">Chocolate Chip Cookie Dough Cheesecake<br>
-		Have one that's not listed?<br>
-		<input type="text" name="othercheesecake"><br>
-		<br>
-		
-		Do you like nuts on your cheesecake?<br>
-		<input list="choices">
-		<datalist id="choices">
-		  <option value="yes">
-		  <option value="no">
-		  <option value="sometimes">
-		</datalist><br>
-		<br>
-		
-		Link to your favorite cheesecake recipe:
-		<input type="url" name="url"><br>
-		<br>
+		<fieldset>
+			<legend>Cheescake Info</legend>
+			Brief Summary of Why You are a Fan of Cheesecake:<br> <textarea rows="4" cols="50" name="summary" placeholder="Cheesecake is amazing, here is why I am a fan:"></textarea><br>
+			<br>
+			
+			How long have you been a fan of cheesecake?
+			<select name="years">
+				<option value="<1">Less than 1 year</option>
+				<option value="1-3">1-3 years</option>
+				<option value="4-5">4-5 years</option>
+				<option value="6+">6+ years</option>
+			</select><br>
+			<br>
+			
+			Select your Top 3 Favorite Flavors of Cheesecake:<br>
+			<input type="checkbox" name="cheesecake1" value="oreo">Oreo Cheesecake<br>
+			<input type="checkbox" name="cheesecake1" value="chocolate">Chocolate Cheesecake<br>
+			<input type="checkbox" name="cheesecake1" value="triplechocolate">Triple Chocolate Cheesecake<br>
+			<input type="checkbox" name="cheesecake1" value="raspberry">Raspberry Cheesecake<br>
+			<input type="checkbox" name="cheesecake1" value="strawberry">Strawberry Cheesecake<br>
+			<input type="checkbox" name="cheesecake1" value="newyork">New York Style Cheesecake<br>
+			<input type="checkbox" name="cheesecake1" value="mocha">Mocha Cheesecake<br>
+			<input type="checkbox" name="cheesecake1" value="peanutbuttercup">Peanutbutter Cup Cheesecake<br>
+			<input type="checkbox" name="cheesecake1" value="cookiedough">Chocolate Chip Cookie Dough Cheesecake<br>
+			Have one that's not listed?<br>
+			<input type="text" name="othercheesecake"><br>
+			<br>
+			
+			Do you like nuts on your cheesecake?<br>
+			<input list="choices">
+			<datalist id="choices">
+			  <option value="yes">
+			  <option value="no">
+			  <option value="sometimes">
+			</datalist><br>
+			<br>
+			
+			Link to your favorite cheesecake recipe:
+			<input type="url" name="url"><br>
+			<br>
+		</fieldset>
 			
 		<button type="submit" value="Submit">Submit</button>
 		<input type="image" src="imagefile.png" alt="Submit">
 		<button type="reset" value="Reset">Reset</button>
 	</form>
+	
+		<footer>
+		<p>Page by: Scot Gulley</p>
+		<address>
+			<p>Contact: LuvCheesecakeCo@gmail.com</p>
+			<p>Cheesecake City, Cheesecake Land</p>
+		</address>
+		<p><small>Copyright 2016</small></p>
+	</footer>
 </body>
 
 </html>
