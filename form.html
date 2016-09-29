@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,29 +19,36 @@
 	<form method="post" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
 		<fieldset>
 			<legend>Personal Info/Account Setup</legend>
-			First and Last Name: <input type="text" name="fullname" autofocus required><br>
+			<dl>
+			<dt>First and Last Name:</dt> <input type="text" name="fullname" autofocus required><br>
 			<br>
 			
-			Email: <input type="email" name="email" required><br>
+			<dt>Email:</dt> <input type="email" name="email" required><br>
 			<br>
 			
-			Desired Username: <input type="text" name="username" placeholder="username" required><br>
+			<dt>Desired Username:</dt> <input type="text" name="username" placeholder="username" required><br>
 			<br>
 			
-			Create Password: <input type="password" name="psw" required><br>
+			<dt>Create Password:</dt> <input type="password" name="psw" required><br>
+			</dl>
 			<br>
 			
 			Gender: 
 			<input type="radio" name="gender" value="male"> Male
 			<input type="radio" name="gender" value="female"> Female
+			
 			<br>
 			<br>
 			
-			Birthday:
+			<dl>
+			<dt>Birthday:</dt>
 			<input type="date" name="bday"><br>
 			<br>
 			
-			Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br>
+			<dt>Country code:</dt> <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+			</dl>
+			
+			<br>
 			<br>
 			
 			Age Group (Note: this information is for private statistical use):
@@ -91,7 +98,7 @@
 			</datalist><br>
 			<br>
 			
-			Link to your favorite cheesecake recipe:
+			Link to your favorite cheesecake recipe:<br>
 			<input type="url" name="url"><br>
 			<br>
 		</fieldset>
