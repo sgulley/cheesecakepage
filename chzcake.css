@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+#container {
+	overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+#container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+#project3 {
+	display:none;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Open Sans", Oswald;
+}
+
+#recipe, #recipeInstructions {
+	font-family: "Open Sans", Shrikhand;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+header {
+	text-shadow: 5px 5px #888888;
+	background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(black, white); /* Standard syntax */
+}
+
+footer {
+	text-shadow: 2px 0px black;
+	background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, black); /* Standard syntax */
+}
+
+nav {
+	-ms-transform: rotate(353deg); /* IE 9 */
+    -webkit-transform: rotate(353deg); /* Chrome, Safari, Opera */
+    transform: rotate(353deg);
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1px;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav a {
+	text-decoration:none;
+}   
+
+#about {
+	box-shadow: 10px 10px 5px #888888;
+	border-radius: 25px;
+	border: 1px solid grey;
+	padding-left:400px;
+	padding-right:400px;
+}
+
+#gallery figure {
+	border-radius: 25px;
+	opacity: 0.8;
+	box-shadow: 10px 10px 5px #888888;
+	display: inline-block;
+}
+
+#gallery img {
+	-webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s;
+}
+
+#gallery img:hover {
+	width: 300px;
+    height: 300px;
+}
+
+#recipe {
+	box-shadow: 10px 10px 5px #888888;
+	border-radius: 25px;
+	border: 1px solid grey;
+	border-bottom: 0px;
+}
+
+#recipe p{
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+	box-shadow: 10px 10px 5px #888888;
+	border-radius: 25px;
+	border: 1px dotted grey;
+	margin-right: 1540px;
+	text-align: left;
+	left:42%;
+	position: relative;
+}
+
+#recipe p:hover {
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+
+#recipeInstructions {
+	box-shadow: 10px 10px 5px #888888;
+	border-radius: 25px;
+	border: 1px solid grey;
+	border-top: 0px;
+}
+
+#recipeInstructions li {
+	text-shadow: 1px 1px #888888;
+	border-radius: 25px;
+	border: 1px dotted grey;
+	margin-right: 1000px;
+	list-style-type: none;
+	text-align: left;
+	left:30%;
+	position: relative;
+}
+
+#otherRecipes, #quotes {
+	box-shadow: 10px 10px 5px #888888;
+	border-radius: 25px;
+	border: 1px solid grey;
+	border-top: 0px;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+	margin-right: 170px;
+    border-right: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+
