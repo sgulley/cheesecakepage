@@ -24,7 +24,7 @@ html {
 }
 
 #project3 {
-	display:none;
+	
 }
 
 h1, h2, h3, h4 {
@@ -174,7 +174,16 @@ article {
     overflow: hidden;
 }
 
-input {
-	margin:10px;
-	display:inline-block;
+/*FORM*/
+
+.label-class {
+	text-align:left;
+    width: 100%;
+    clear:both;
+    float:left;
+    margin-bottom: 20px;
+}
+.input-class {
+	
+	float:right;
 }
