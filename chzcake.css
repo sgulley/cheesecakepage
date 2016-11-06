@@ -1,199 +1,287 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 html {
-	background-color:rgba(179, 60, 0, .8);
+    background-color: rgba(179, 60, 0, .8);
 }
-
+* {
+    box-sizing: border-box;
+}
 #container {
-	border: 2px solid black;
-	background-color:#ffffcc;
-	max-width:1000px;
-	margin:0 auto;
-	overflow: hidden;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+    background-color: #ffffcc;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+}
+#container::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid grey;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+#project3 {
     text-align: center;
 }
-
-#container > * {
-    padding: 15px;
-    -webkit-flex: 1 100%;
-    flex: 1 100%;
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+    font-family: "Open Sans", Oswald;
 }
-
-#project3 {
-	
+#recipe,
+#recipeInstructions {
+    font-family: "Open Sans", Shrikhand;
 }
-
-h1, h2, h3, h4 {
-	font-family: "Open Sans", Oswald;
-}
-
-#recipe, #recipeInstructions {
-	font-family: "Open Sans", Shrikhand;
-}
-
-header, footer {
+header,
+footer {
     padding: 1em;
     color: white;
     background-color: black;
     clear: left;
     text-align: center;
 }
-
 .no-csstransforms h1 {
-	text-align:left;
-	text-shadow: 5px 5px #888888;
+    text-align: left;
+    text-shadow: 5px 5px #888888;
 }
-
 .csstransforms h1 {
-	-ms-transform: rotate(355deg); /* IE 9 */
-    -webkit-transform: rotate(355deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(355deg);
+    /* IE 9 */
+    
+    -webkit-transform: rotate(355deg);
+    /* Chrome, Safari, Opera */
+    
     transform: rotate(355deg);
 }
-
 h1 {
-	text-align:left;
-	-ms-transform: rotate(355deg); /* IE 9 */
-    -webkit-transform: rotate(355deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(355deg);
+    /* IE 9 */
+    
+    -webkit-transform: rotate(355deg);
+    /* Chrome, Safari, Opera */
+    
     transform: rotate(355deg);
-	text-shadow: 5px 5px #888888;
+    text-shadow: 5px 5px #888888;
 }
-
 header {
-	background: black; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#993300, #ffffcc); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#993300, #ffffcc); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#993300, #ffffcc); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#993300, #ffffcc); /* Standard syntax */
+    background: black;
+    /* For browsers that do not support gradients */
+    
+    background: -webkit-linear-gradient(#993300, #ffffcc);
+    /* For Safari 5.1 to 6.0 */
+    
+    background: -o-linear-gradient(#993300, #ffffcc);
+    /* For Opera 11.1 to 12.0 */
+    
+    background: -moz-linear-gradient(#993300, #ffffcc);
+    /* For Firefox 3.6 to 15 */
+    
+    background: linear-gradient(#993300, #ffffcc);
+    /* Standard syntax */
 }
-
 footer {
-	text-shadow: 2px 0px black;
-	background: black; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#ffffcc, #993300); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#ffffcc, #993300); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#ffffcc, #993300); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#ffffcc, #993300); /* Standard syntax */
+    text-shadow: 2px 0px black;
+    background: black;
+    /* For browsers that do not support gradients */
+    
+    background: -webkit-linear-gradient(#ffffcc, #993300);
+    /* For Safari 5.1 to 6.0 */
+    
+    background: -o-linear-gradient(#ffffcc, #993300);
+    /* For Opera 11.1 to 12.0 */
+    
+    background: -moz-linear-gradient(#ffffcc, #993300);
+    /* For Firefox 3.6 to 15 */
+    
+    background: linear-gradient(#ffffcc, #993300);
+    /* Standard syntax */
 }
-
 nav {
-	float:right;
+    float: left;
     margin: 0;
     padding: 1px;
     list-style-type: none;
     padding: 0;
 }
-
 nav a {
-	text-decoration:none;
+    text-decoration: none;
 }
-
 nav li {
-	background-color:#ffffcc;
-	border: 1px solid grey;
-	display:inline;
-	padding:10px;
+    background-color: #ffffcc;
+    border: 1px solid grey;
+    display: block;
+    padding: 10px;
 }
-
 nav li:hover {
-	background-color: rgba(153, 51, 0, 0.3);
-}   
-
+    background-color: rgba(153, 51, 0, 0.3);
+}
 #about {
-	box-shadow: 10px 10px 5px #ff661a;
-	border-top: 1px solid grey;
-	border-bottom: 1px solid grey;
+    box-shadow: 10px 10px 5px #ff661a;
+    border-radius: 25px;
+    border: 1px solid grey;
+    padding: 15px;
 }
-
+aside {
+    text-align: center;
+}
+#gallery {
+    text-align: center;
+}
 #gallery figure {
-	border-radius: 25px;
-	opacity: 0.8;
-	box-shadow: 10px 10px 5px #ff661a;
-	display: inline-block;
+    border-radius: 25px;
+    opacity: 0.8;
+    box-shadow: 10px 10px 5px #ff661a;
+    display: inline-block;
 }
-
 #gallery img {
-	-webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    -webkit-transition: width 1s, height 1s;
+    /* For Safari 3.1 to 6.0 */
+    
     transition: width 1s, height 1s;
 }
-
 #gallery img:hover {
-	width: 300px;
+    width: 300px;
     height: 300px;
 }
-
 .no-borderradius #recipe {
-	background: url("rounded-button.png");
+    background: url("rounded-button.png");
 }
-
 .borderradius #recipe {
-	box-shadow: 10px 10px 5px #ff661a;
-	border-radius: 25px;
-	border: 1px solid grey;
-	border-bottom: 0px;
+    box-shadow: 10px 10px 5px #ff661a;
+    border-radius: 25px;
+    border: 1px solid grey;
+    border-bottom: 0px;
 }
-
-#recipe p{
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+#recipe p {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    /* Safari */
+    
     transition: width 2s, height 2s, transform 2s;
-	box-shadow: 10px 10px 5px #ff661a;
-	border-radius: 25px;
-	border: 1px dotted grey;
-	text-align: left;
-	position: relative;
-	padding: 10px;
+    box-shadow: 10px 10px 5px #ff661a;
+    border-radius: 25px;
+    border: 1px dotted grey;
+    text-align: left;
+    position: relative;
+    padding: 10px;
 }
-
 #recipe p:hover {
-    -webkit-transform: rotate(360deg); /* Safari */
+    -webkit-transform: rotate(360deg);
+    /* Safari */
+    
     transform: rotate(360deg);
 }
-
 #recipeInstructions {
-	box-shadow: 10px 10px 5px #ff661a;
-	border-radius: 25px;
-	border: 1px solid grey;
-	border-top: 0px;
+    padding: 15px;
+    box-shadow: 10px 10px 5px #ff661a;
+    border-radius: 25px;
+    border: 1px solid grey;
 }
-
 #recipeInstructions li {
-	text-shadow: 1px 1px #ff661a;
-	border-radius: 25px;
-	border: 1px dotted grey;
-	list-style-type: none;
-	text-align: left;
-	position: relative;
+    text-shadow: 1px 1px #ff661a;
+    border-radius: 25px;
+    border: 1px dotted grey;
+    list-style-type: none;
+    text-align: left;
+    position: relative;
 }
-
-#otherRecipes, #quotes {
-	box-shadow: 10px 10px 5px #ff661a;
-	border-radius: 25px;
-	border: 1px solid grey;
-	border-top: 0px;
+#otherRecipes,
+#quotes {
+    text-align: center;
+    box-shadow: 10px 10px 5px #ff661a;
+    border-radius: 25px;
+    border: 1px solid grey;
+    padding: 15px;
 }
-
 article {
     margin-left: 170px;
     border-left: 1px solid gray;
-	margin-right: 170px;
+    margin-right: 170px;
     border-right: 1px solid gray;
     padding: 1em;
     overflow: hidden;
 }
-
 /*FORM*/
 
 .label-class {
-	text-align:left;
-    width: 100%;
-    clear:both;
-    float:left;
+    text-align: left;
+    clear: both;
+    float: left;
     margin-bottom: 20px;
 }
 .input-class {
-	
-	float:right;
+    float: right;
+}
+textarea {
+    width: 98%;
+}
+/*MEDIA*/
+
+@media all and (max-width: 1000px) {
+    body {
+        font-size: .8em;
+    }
+    .col-1,
+    .col-11 {
+        width: 100%;
+    }
+}
+@media all and (max-width: 799px) {
+    section p,
+    video,
+    img,
+    audio {
+        width: 100%;
+    }
+    ul {
+        padding-left: 14px;
+    }
+    article {
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
 }
